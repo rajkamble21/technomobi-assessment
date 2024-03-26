@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.hero-section{
+    background: #111111;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 150px;
+}
+
+.text{
+    font-weight: 400;
+    color: #FEFEFE;
+    font-size: 38px;
+    font-family: "IBM Plex Sans", sans-serif;
+    width: 70%;
+}
+
+.rectangle{
+     height: 5px;
+     width: 80px;
+     background-color: #FAC124;
+}
+
+.buttons{
+    display: flex;
+    gap: 18px;
+}
+
+.btn-primary{
+    width: 182px;
+    height: 54px;
+    color: #FFFFFF;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #256BFF;
+    border-radius: 2px;
+}
+.btn-secondary{
+    width: 182px;
+    height: 54px;
+    color: #256BFF;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+.section-1{
+    padding: 100px 150px;
+    background-color: rgba(37, 107, 255, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.section-1 > h1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+}
+
+.section-1-items{
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 27px 136px 0px rgba(129, 137, 190, 0.2);
+    padding: 35px;
+}
+
+.item > h5 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 35px;
+}
+
+.item > p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+
+
+.cta{
+    position: relative;
+}
+
+.cta .upper{
+    height: 60px;
+    background-color: rgba(37, 107, 255, 0);
+}
+.cta .lower{
+    height: 60px;
+    background-color: rgba(37, 107, 255, 0.1);
+}
+
+.cta .floating-div{
+    width: 80%;
+    position: absolute;
+    top:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 120px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 27px 136px 0px rgba(129, 137, 190, 0.2);
+    border-radius: 8px;
+    
+}
+
+.cta .floating-div > h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 31px;
+}
+
+
+
+
+
+
+.section-2 {
+    background-color: rgba(37, 107, 255, 0.1);
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+
+.group > h1{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 31px;
+}
+.group .blue-line{
+    width: 128px;
+    height: 2px;
+    background-color: rgba(37, 107, 255, 1);
+}
+.group > p{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.card{
+    display: grid;
+    grid-template-areas: 'item1 item2 item3'
+    'item4 item5 item5';
+    gap: 25px;
+    
+}
+
+.card > div {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 25px;
+    box-shadow: 0px 27px 136px 0px rgba(129, 137, 190, 0.3);
+}
+
+.card > div > img {
+    margin-bottom: 20px;
+}
+.card > div > h5 {
+    margin-bottom: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+}
+.card > div > p {
+    margin-bottom: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.card .item-1 {
+    grid-area: item1;
+}
+.card .item-2 {
+    grid-area: item2;
+}
+.card .item-3 {
+    grid-area: item3;
+}
+.card .item-4 {
+    grid-area: item4;
+}
+.card .item-5 {
+    grid-area: item5;
+}
+
+
+
+
+
+/*Media query for tablet*/
+
+@media (max-width:767px){
+    .hero-text{
+        gap: 1rem;
+        margin-left: 15px;
+    }
+    .text{
+        font-weight: 400;
+        color: #FEFEFE;
+        font-size: 22px;
+    }
+    .hero-img > img {
+        width: 100%;
+    }
+
+
+
+
+    .section-1{
+        padding: 90px 15px;
+        gap: 50px;
+        align-items: center;
+    }
+    
+    .section-1 > h1 {
+        font-size: 22px;
+    }
+    
+    .section-1-items{
+        width: 100%;
+    }
+    
+    .item{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 27px 136px 0px rgba(129, 137, 190, 0.3);
+        padding: 5px;
+    }
+    
+    .item > h5 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .item > p {
+        font-size: 16px;
+    }
+
+
+
+
+    .cta{
+        position: relative;
+    }
+    
+    .cta .upper{
+        height: 60px;
+        background-color: rgba(37, 107, 255, 0);
+    }
+    .cta .lower{
+        height: 60px;
+        background-color: rgba(37, 107, 255, 0.1);
+    }
+    
+    .cta .floating-div{
+        width: 80%;        
+    }
+    
+    .cta .floating-div > h2 {
+        font-size: 22px;
+    }
+
+
+
+
+
+    .section-2 {
+        padding: 90px 15px;
+        gap: 70px;
+    }
+    
+    .group {
+        gap: 20px;
+        width: 60%;
+    }
+    
+    .group > h1{
+        font-size: 22px;
+    }
+
+    .group > p{
+        font-size: 16px;
+    }
+    
+    .card{
+        display: grid;
+        grid-template-areas: 'item1 item2 item3'
+        'item4 item5 item5';
+        gap: 15px;
+        
+    }
+    
+    .card > div {
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 25px;
+        box-shadow: 0px 27px 136px 0px rgba(129, 137, 190, 0.3);
+    }
+    
+    .card > div > img {
+        margin-bottom: 20px;
+    }
+    .card > div > h5 {
+        margin-bottom: 20px;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: black;
+    }
+    .card > div > p {
+        margin-bottom: 20px;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+    }
+    
+    .card .item-1 {
+        grid-area: item1;
+    }
+    .card .item-2 {
+        grid-area: item2;
+    }
+    .card .item-3 {
+        grid-area: item3;
+    }
+    .card .item-4 {
+        grid-area: item4;
+    }
+    .card .item-5 {
+        grid-area: item5;
+    }
+
+
+}
+
+
+
+
+
+
+/*Media query for mobile*/
+
+@media (max-width: 480px) {
+    .hero-section{
+        padding: 30px 0px;
+    }
+    
+    .hero-text{
+        gap: 1rem;
+        margin-left: 5px;
+    }
+    
+    .text{
+        font-size: 16px;
+        width: 70%;
+    }
+    
+    .rectangle{
+         height: 5px;
+         width: 80px;
+    }
+    
+    .buttons{
+        display: flex;
+        gap: 8px;
+    }
+
+
+    .btn-primary{
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+        border-radius: 2px;
+    }
+    .btn-secondary{
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        border-radius: 2px;
+    }
+
+
+
+
+    .section-1{
+        padding: 60px 5px;
+        gap: 50px;
+        align-items: center;
+    }
+    
+    .section-1 > h1 {
+        font-size: 16px;
+    }
+    
+    .section-1-items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .item{
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 27px 136px 0px rgba(129, 137, 190, 0.3);
+        padding: 10px;
+    }
+    
+    .item > h5 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .item > p {
+        font-size: 14px;
+    }
+
+
+
+
+    .cta{
+        position: relative;
+    }
+    
+    .cta .upper{
+        height: 60px;
+        background-color: rgba(37, 107, 255, 0);
+    }
+    .cta .lower{
+        height: 60px;
+        background-color: rgba(37, 107, 255, 0.1);
+    }
+    
+    .cta .floating-div{
+        width: 80%;    
+        display: flex;    
+        flex-direction: column;
+    }
+    
+    .cta .floating-div > h2 {
+        font-size: 18px;
+    }
+
+
+
+    .section-2 {
+        padding: 60px 30px;
+        gap: 50px;
+    }
+    
+    .group {
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .group > h1{
+        font-size: 16px;
+        text-align: center;
+    }
+    .group .blue-line {
+        margin: 0 auto;
+    }
+
+    .group > p{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .card{
+        display: grid;
+        grid-template-areas: 
+            'item1'
+            'item2'
+            'item3'
+            'item4'
+            'item5';
+        gap: 10px;
+        
+    }
+    
+    .card > div {
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0px 27px 136px 0px rgba(129, 137, 190, 0.3);
+    }
+    
+    .card > div > img {
+        margin-bottom: 5px;
+    }
+    .card > div > h5 {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    .card > div > p {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    
+    .card .item-1 {
+        grid-area: item1;
+    }
+    .card .item-2 {
+        grid-area: item2;
+    }
+    .card .item-3 {
+        grid-area: item3;
+    }
+    .card .item-4 {
+        grid-area: item4;
+    }
+    .card .item-5 {
+        grid-area: item5;
+    }
+    
+}
